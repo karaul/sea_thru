@@ -39,3 +39,6 @@ $$
 +&\underbrace{\gamma\left[var(I_{c})-\sigma_{cD}^{2}e^{-2\frac{a}{\sqrt{b+z}}\cdot z}-\sigma_{cB}^{2}e^{-2\beta_{c}^{B}\cdot z}\right]^{2}}_{\text{Intensity color variance loss}}
 \end{aligned}
 $$
+
+
+$$ \begin{aligned} \mathcal{L}{c}(v{c},z)= &\underbrace{\eta(I_{c}^{lp}-BS_{c})^{2}}_{\text{Backscatter/lower percentile vector reconstruction loss}} \cr +& \underbrace{\mu\left[max\left(0,BS_{c}-I_{c}^{lp}\right)\right]^{2}}_{\text{BS upper barrier function}} \cr +& \underbrace{\sum_{{i\in{lp,hp,mean}}}\left[(I_{c}^{(i)}-BS_{c})-AL_{c}^{(i)}\right]^{2}}_{\text{AL Intensity vectors reconstruction loss}} \cr +&\underbrace{\lambda^{(i)}\left[max\left(0,\left(I_{c}^{(i)}-BS_{c}\right)-AL_{c}^{(i)}\right)\right]^{2}}_{\text{AL Lower barrier function}}\cr  +&\underbrace{\gamma\left[var(I_{c})-\sigma_{cD}^{2}e^{-2\frac{a}{\sqrt{b+z}}\cdot z}-\sigma_{cB}^{2}e^{-2\beta_{c}^{B}\cdot z}\right]^{2}}_{\text{Intensity color variance loss}} \end{aligned} $$
